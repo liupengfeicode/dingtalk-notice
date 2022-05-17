@@ -1,22 +1,8 @@
 {
-  "name": "liupengfeicode/dingding-notice",
-  "description": "dingding notice demo",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "liupengfeicode",
-      "email": "525833532@qq.com"
-    }
-  ],
-  "minimum-stability": "main",
-  "require": {
-    "php": ">=7.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Liupengfeicode\\DingtalkNotice\\": "src/"
-    }
-  },
-  "require": {}
+    "name": "liupengfeicode/diy-dingtalk-notice",
+    "description": "dingtalk notice demo",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
 }
