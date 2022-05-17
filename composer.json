@@ -9,6 +9,9 @@
       "email": "525833532@qq.com"
     }
   ],
+  "require": {
+    "php": ">=7.0"
+  },
   "autoload": {
     "psr-4": {
       "Liupengfeicode\\DingtalkNotice\\": "src/"
