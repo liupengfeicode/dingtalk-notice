@@ -3,7 +3,7 @@ dingtalk-notice
 
 ## install
 ```
-composer require liupengfeicode/dingding-notice
+composer require liupengfeicode/diy-dingtalk-notice
 ```
 
 ## use
