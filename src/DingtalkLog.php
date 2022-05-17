@@ -1,18 +1,18 @@
 <?php
-namespace dingtalk\notice;
+namespace liupengfeicode\notice;
 
-use dingtalk\notice\DingNotice;
+use liupengfeicode\notice\DingtalkBot;
 use think\contract\LogHandlerInterface;
 use think\facade\Request;
 
 /**
  * 钉钉日志驱动
  */
-class DingLog implements LogHandlerInterface
+class DingtalkLog implements LogHandlerInterface
 {
     /**
      * 钉钉自定义机器人类
-     * @var DingNotice
+     * @var DingtalkBot
      */
     protected $ding;
     /**
@@ -35,7 +35,7 @@ class DingLog implements LogHandlerInterface
         if (!empty($config)) {
             $this->config = array_merge($this->config, $config);
         }
-        $this->ding = new DingNotice($this->config);
+        $this->ding = new DingtalkBot($this->config);
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php
 declare (strict_types=1);
 
-namespace dingtalk\notice;
+namespace liupengfeicode\notice;
 
-class DingNotice
+class DingtalkBot
 {
     /**
      * 钉钉自定义机器人接口链接

@@ -1,14 +1,17 @@
-# dingtalk-notice
-dingtalk-notice
+# ding-bot
+php plugin for dingtalk robot notice
 
 ## install
 ```
-composer require liupengfeicode/diy-dingtalk-notice
+composer require liupengfeicode/dingtalk-notice
 ```
 
 ## use
 参考钉钉自定义机器人[接口文档](https://open-doc.dingtalk.com/microapp/serverapi2/qf2nxq)
+
 ```
+use liupengfeicode/notice/DingtalkBot;
+
 $config = [
     //自定义机器人api接口链接
     'webhook' => 'https://oapi.dingtalk.com/robot/send?access_token=xxxx',
@@ -16,7 +19,7 @@ $config = [
     'secret'  => 'ssss',
 ];
 //实例化
-$ding = new DingNotice($config);
+$ding = new DingtalkBot($config);
 
 //发送文本消息
 $res = $ding->text('hello hello');
@@ -54,7 +57,6 @@ $res = $ding->makeLink(
     ->makeLink('你我所熟知的那个维基百科，出事情了','https://bh.sb/post/46120/','https://abiko.loli.net/thumb/?src=https://dulei.si/files/2019/07/28/006f52e9102a8d3be2fe5614f42ba989.jpeg&w=240&h=180&zc=1')
     ->feedCard();
 ```
-
 ## log driver for thinkphp6
 ### config
 ```
@@ -98,7 +100,7 @@ return [
         // 其它日志通道配置
         'ding' => [
             // 日志记录方式
-            'type'           => '\\bingher\\ding\\DingLog',
+            'type'           => '\\liupengfeicode\\notice\\DingtalkLog',
             'webhook' => 'https://oapi.dingtalk.com/robot/send?access_token=xxxx', //你申请的钉钉机器人api
             'at' => [], //接收人手机号
             'secret' => '签名密钥',

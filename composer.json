@@ -1,8 +1,21 @@
 {
-    "name": "liupengfeicode/diy-dingtalk-notice",
-    "description": "dingtalk notice demo",
+    "name": "liupengfeicode/dingtalk-notice",
+    "description": "php plugin for dingtalk robot notice",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "liupengfeicode",
+            "email": "525833532@qq.com"
+        }
+    ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "liupengfeicode\\notice\\": "src"
+        }
+    }
 }
