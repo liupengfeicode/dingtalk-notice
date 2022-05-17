@@ -9,7 +9,7 @@
       "email": "525833532@qq.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "main",
   "require": {
     "php": ">=7.0"
   },
