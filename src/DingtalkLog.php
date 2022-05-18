@@ -1,7 +1,6 @@
 <?php
 namespace liupengfeicode\notice;
 
-use liupengfeicode\notice\DingtalkBot;
 use think\contract\LogHandlerInterface;
 use think\facade\Request;
 
